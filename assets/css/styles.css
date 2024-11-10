@@ -29,9 +29,8 @@ html {
 }
 
 body {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: auto;
-	padding: 24px;
 }
 
 a {
