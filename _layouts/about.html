@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+	</head>
+	<body>
+		<div id="user-info">
+			<img id="avatar" src="{{ page.avatar }}" height="96" width="96" />
+			<p id="username">{{ page.username }}</p>
+			-
+			<p class="pronouns">{{ page.pronouns }}</p>
+
+			<div id="profile-quote">
+				<blockquote>
+					"{{ page.quote }}"
+				</blockquote>
+				<small>
+					—{{ page.quote-author }}
+				</small>
+			</div>
+		</div>
+		<div id="content">
+			{{ content }}
+		</div>
+	</body>
+</html>

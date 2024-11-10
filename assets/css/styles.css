@@ -1,0 +1,80 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media (prefers-color-scheme: light) {
+	html {
+		--pronouns-color: rgba(255, 192, 203, 0.5);
+		--quote-color: #f8f9fa;
+
+		color: black;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	html {
+		--pronouns-color: rgba(255, 90, 118, 0.5);
+		--quote-color: #004c68;
+
+		background-color: #1e2022;
+		color: white;
+	}
+
+	a {
+		color: #89CFF0;
+	}
+}
+
+html {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+	max-width: 800px;
+	margin: auto;
+	padding: 24px;
+}
+
+a {
+	font-weight: 500;
+
+}
+
+#content {
+	font-size: large;
+}
+
+#user-info {
+	font-size: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	* {
+		display: flex;
+		margin: 5px;
+	}
+}
+#username {
+	font-size: 32px;
+	font-weight: bold;
+}
+#avatar {
+	border-radius: 100%;
+}
+
+#profile-quote {
+	display: block;
+	background-color: var(--quote-color);
+	border-radius: 24px;
+	padding: 5px;
+
+	> blockquote {
+		margin: 10px;
+	}
+}
+
+.pronouns {
+	padding: 5px;
+	background-color: var(--pronouns-color);
+	border-radius: 12px;
+}
